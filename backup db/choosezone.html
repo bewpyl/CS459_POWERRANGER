@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Choose Zone </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+	<div id="id1">
+	</div>
+
+	
+	<div class = "selectzone" id ="choose">
+			<div id ="zone">
+				<p>[[concertID]]</p>
+				<p> t.objects.get(id=[[concertID]]) </p>
+
+			</div>
+
+		<select id="chooseZone" onchange="changeFunc();">
+  			<option value=" "> </option>
+  			{% for z in zone %}
+   				<option value="{{z.id}}" >zone {{z.name}}</option>
+  			{% endfor %}
+			
+			<p>[[selectValue]]</p>
+
+		</select>
+
+		
+		<div id="Bzone">
+			<a href="/choosezone/[[selectedValue]]/" onclick="vue()"><button> Next </button></a>
+		</div>
+		<div id="zzone">
+		<div>
+
+		<h1>[[selectedValue]]</h1>
+
+	</div>
+
+
+<script>
+ 	document.getElementById("id1").innerHTML = sessionStorage.getItem("concertName");
+ 	function changeFunc(toNext){
+ 		var selectZone = document.getElementById("chooseZone");
+ 		var selectedValue = selectZone.options[selectZone.selectedIndex].value;
+ 		document.getElementById("zzone").innerHTML = selectedValue;
+ 		sessionStorage.setItem("zoneID", selectedValue);
+ 	}
+ 	new Vue({
+ 		el: '#choose',
+ 		delimiters : ['[[',']]'],
+
+ 		 mounted: function (){
+ 		},
+ 		data: function () {
+        return {
+            'concertID': sessionStorage.getItem("concertName"),
+            'selectedValue' :sessionStorage.getItem("zoneID"),
+        }
+    }
+
+ 	})
+
+ 	
+</script>
+
+</body>
+</html> 

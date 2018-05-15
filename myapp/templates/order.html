@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+ body{
+  padding: 0;
+  
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("/static/images/bg.jpg");
+  
+ }
+
+ .myLogin a{
+    text-decoration: none;
+    color: #e85959;
+    font-size: 40px;
+}
+.myLogin {
+    text-align: center;
+    align-items: center;
+    padding-left: 50px;
+}
+.myLogo img{
+    border-right: 3px solid #a1a1a1;
+}
+.myLogo {
+    margin: 0px;
+}
+.myContainer1 {
+    align-items: center;
+    margin: auto;
+    position: relative;
+    padding-top: 13%;
+}
+.myContainer2 {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 30%;
+}
+.myContainer3 a{
+    text-decoration: none;
+    color: #e85959;
+    text-align: center;
+}
+.myContainer3{
+    margin-top: 1%;
+    padding-left: 93%;
+}   
+@media(max-width: 600px){
+    .aa a{
+    }
+}
+
+ .error{
+  background-color: #e85959;
+  color: white;
+  text-align: center;
+  width: 100%;
+  float: clear;
+  padding-top: 0.3%;
+  padding-bottom: 0.3%;
+
+
+ }
+ .menu{
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.65);
+  float: left;
+ }
+
+ .menutitle{
+    text-align: center ;
+    margin: 23px 0;
+    
+ }
+
+ .logo{
+    margin-left: 5%;
+    background-color: transparent;
+    float: left;
+
+ }
+
+ .but{
+  background-color: transparent;
+    text-align: center ;
+    
+ }
+ 
+ .aa a{
+     color: #e85959;
+     text-decoration: none;
+     text-align: center;
+    display: inline-block;
+    padding-left: 2%;
+    padding-right: 2%;
+    float: right;
+    font-size: 22px;
+ }
+
+ .ab a{    
+     color: #e85959;
+     text-decoration: none;
+    display: inline-block;
+    padding-left: 2%;
+    padding-right: -0.2%;
+    margin-top: -12px;
+    float: right;
+
+ }
+
+ .aab a{
+  border-right: 2px solid #a1a1a1;
+  height: 25px;
+   color: #e85959;
+     text-decoration: none;
+     text-align: center;
+    display: inline-block;
+    padding-left: 2%;
+    padding-right: 2%;
+    float: right;
+    font-size: 22px;
+
+ }
+
+ @media(max-width: 600px){
+  .aa a{
+     }
+
+
+ }
+
+
+
+ .titleCon{
+  text-align: center;
+     color: #e85959;
+  margin-top:8%;
+  margin-bottom:3%;
+  font-size: 220%;
+
+ }
+
+
+
+#rcorners1 {
+    border-radius: 25px;
+ background: #94949460;
+     padding: 20px; 
+    width: 43%;
+    height: 450px;    
+    margin: 0 auto;
+}
+
+
+
+.detail{
+ text-align: left;
+ background-color: transparent;
+ font-size: 130%;
+ margin-left: 6%;
+ margin-right: 6%;
+ margin-top: 1%;
+ float: clear;
+
+}
+
+.detail2{
+ float: clear;
+ margin-top: 3%;
+ margin-left: 2%;
+
+}
+
+.price{
+ float: left;
+ padding: 0%;
+}
+
+
+
+.titlePrice{
+ color: white;
+ font-size: 150%;
+ margin-top:8%;
+ margin-left: 20%;
+
+}
+
+
+textarea {
+    width: 50%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    margin-top: 2%;
+}
+
+
+.button{
+  border-radius: 14px;
+    background: #e85959;
+ margin-top: 1%;
+ margin-bottom: 10%;
+    width: 230px;
+    height: 40px;    
+    text-align: center;
+    font-size: 130%;
+    color: white;
+    border : none;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-left: 18%;
+}
+
+
+
+.addresstext{
+ float: left;
+ margin: 1.5%;
+ color: white;
+ font-size: 120%;
+}
+
+.slipform{
+  margin: 2%;
+}
+
+.shipform{
+ margin-left: 22%;
+ color: rgb(117, 117, 117);
+ padding: 2%;
+}
+
+
+.pict{
+ margin-left: 55%;
+ padding: 3%;
+
+}
+
+#rcorners2 {
+    border-radius: 12px;
+    background: #747474;
+ padding-left: 30%;
+ margin-top: 10%;
+ margin-bottom: 10%;
+ margin-left:16%;
+ padding-top: 3%;
+ padding-right: 12%;
+    width: 150px;
+    height: 35px;    
+    text-align: right;
+    font-size: 130%;
+    padding-left: 25%;
+    color: white;
+
+}
+
+select{
+ margin-top: 1.5%;
+ padding: 1%;
+ font-size: 100%;
+}
+
+
+.pp{
+ float: left;
+ margin-left: 13%;
+}
+
+		/* width */
+	::-webkit-scrollbar {
+	    width: 15px;
+	}
+
+	
+	/* Track */
+	::-webkit-scrollbar-track {
+	    background: #e85959; 
+
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	    background: #9b2828; 
+	    border-radius: 8px;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	    background: #721414; 
+	}
+
+	.myNotification {
+		position: absolute;
+    	bottom: 92.5%;
+    	right: 7.2%;
+    	font-size: 15px;
+    	background-color: red;
+    	border-radius: 50%;
+		border: solid red; 
+		border-right: 9px solid red;
+		border-left: 9px solid red;
+		color: white;
+		width: 0.4%;
+	}
+
+	.usersymbolContainer{
+		text-align: top;
+		background-color: red;
+		cursor: pointer;
+	}
+
+
+</style>
+<head>
+<title> ticket </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+ {% load staticfiles %}
+ {% if request.user.is_authenticated %}
+ <div class = "error">
+  Please verify seller's information and be careful of second-handed ticket selling online before purchasing 
+ </div>
+
+
+ <div class="menu">
+  <div class="logo">
+     <a href='/home' target= "_blank"><img src="{% static "images/reticlogo.png" %}" width="160" height="70"></a>
+  </div>
+  <div class="menutitle">
+   <div class="aa"><a href="{% url 'logout'%}" target="_blank">Logout</a></div>   
+   <div class="usersymbolContainer">    
+          <div class="ab"><a href='/profile/{{user.id}}' target= "_blank">
+
+          {% if user.customer.profile_pic == "" %}
+            <img src="{% static "images/usersymbol.png" %}" width="50" height="50" style="border-radius:50%" id="idImg">  
+          {% else %}
+            <img src="{{user.customer.profile_pic.url}}" width="50" height="50" style="border-radius:50%" id="idImg">
+          {% endif %}
+          </a>    
+          </div>
+
+          {% for order in order %}
+            {% if user.username  == order.ticket.customer.user.username %}
+              {% if order.status  == "unread" %}
+                <div class="myNotification" 
+              > ! </div>
+              {% endif %}
+              {% if order.status  == "read" %}
+                <div class="myNotification" 
+                style="display:none;"> ! </div>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>  
+   <div class="aab"><a href="/contactus" target="_blank">Contact</a></div>
+
+   <div class="aa"><a href="/sell" target="_blank">Seller</a></div>   
+   <div class="aa"><a href="/buy" target="_blank">Buyer</a></div>
+  </div>
+ </div>
+ 
+
+<div class="titleCon">Confirmation</div>
+
+
+ <div class="content">
+ <div id="rcorners1">
+
+
+<form method="POST" class="uk-form" enctype="multipart/form-data">
+        {% block content %}
+    {% csrf_token %}
+ <div class="detail">
+    <div class = "addresstext"> Address : </div><div class="addressform">{{formset.address}}</div>
+    <div class = "addresstext">Add slip :  </div><div class="slipform" >{{formset.slip}}</div>
+   	 {% if shipping == "1" %}
+     <div class = "addresstext">Shipping : </div><div class="shipform" >Registration 30 Bath</div>
+     {% else %}
+      <div class = "addresstext">Shipping : </div><div class="shipform" >EMS 50 Bath</div>
+      {% endif %}
+      {{formset.shipment}}
+     {{formset.date}}
+     {{formset.ticket}}
+     {{formset.buyer}}
+     {{formset.status}}
+ </div>
+
+
+ <div class="detail2">
+ <div class="price">
+ <div class="titlePrice">Total</div>
+ <div id="rcorners2"><div class = "pp">{{total}}</div>Baht  </div>
+
+  <input type="submit" class="button" name="buyticket" value=" Confirm " />
+
+ </div>
+
+ <div class="pict">
+  <img style="border:2px solid rgb(255, 217, 217);" src="{{ticket.pic.url}}" height="160" width="160" display="inline-block" /><br>
+ </div>
+ <div id="Next"></div>
+         {% endblock %}
+  
+    </form>
+ </div>
+
+ {% else %}
+       	<div class="myContainer1">  
+	        <div class="myContainer2">
+	            <div class="myLogo">
+	                <img src="{% static "images/reticlogo.png" %}" width="400" height="200">
+	            </div>
+	            <div class="myLogin">
+	                <a href="{% url 'social:begin' 'tu' %}">Login with TU</a>
+	            </div>
+	        </div>
+    	</div>
+    {% endif %}
+ <script>
+ 	function changeFunc(toNext){
+		document.getElementById("Next")={{formset.shipment.value}}
+ 	}
+ 	
+</script>
+ </div>
+
+
+      
+
+
+
+
+
+
+
+ 
+
+
+
+
+</body>
+
+</html>

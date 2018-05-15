@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<style type="text/css">
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("/static/images/bg.jpg");
+}
+.myLogin a{
+    text-decoration: none;
+    color: #e85959;
+    font-size: 40px;
+}
+.myLogin {
+    text-align: center;
+    align-items: center;
+    padding-left: 50px;
+}
+.myLogo img{
+    border-right: 3px solid #a1a1a1;
+}
+.myLogo {
+    margin: 0px;
+}
+.myContainer1 {
+    align-items: center;
+    margin: auto;
+    position: relative;
+    padding-top: 13%;
+}
+.myContainer2 {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 30%;
+}
+.myContainer3 a{
+    text-decoration: none;
+    color: #e85959;
+    text-align: center;
+}
+.myContainer3{
+    margin-top: 1%;
+    padding-left: 93%;
+}   
+@media(max-width: 600px){
+    .aa a{
+    }
+}
+::-webkit-scrollbar {
+     width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e85959; 
+}
+::-webkit-scrollbar-thumb {
+    background: #9b2828; 
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #721414; 
+}
+</style>
+
+
+<head>
+    <title>Login</title>
+</head>
+<body>
+{% load staticfiles %}
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<div>
+    <div class="myContainer3">
+        <a href='/contactus'>CONTACT</a>
+    </div>  
+    <div class="myContainer1">  
+        <div class="myContainer2">
+            <div class="myLogo">
+                <img src="{% static "images/reticlogo.png" %}" width="400" height="200">
+            </div>
+
+            <div class="myLogin">
+                {% if request.user.is_authenticated %}
+                    <p> hi {{user.username}} </p>
+                    <a href="{% url 'logout' %}">Click here to logout.</a>
+                    <a a href="{% url 'sell' %}">Sell</a>
+                    <a a href="{% url 'buy' %}">Buy</a>
+                {% else %}
+                    <a href="{% url 'social:begin' 'tu' %}">Login with TU</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+</script>
+</body>
+</html>

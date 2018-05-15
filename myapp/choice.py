@@ -1,0 +1,1 @@
+STATUS_CHOICE = ((1,("Registration 30 Bath")),(2,("EMS 50 Bath")))

@@ -1,0 +1,19 @@
+{% block head %}
+<title>Edit Ticket</title>
+{% endblock %}
+
+{% block body %}
+
+<h1>Edit Ticket</h1>
+<div class="container">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+</div>
+
+{% endblock %}

@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body{
+		padding: 0;
+		margin: 0;
+		font-family: 'Poppins', sans-serif;
+		background-image: url("/static/images/bg.jpg");
+		
+	}
+
+	.myLogin a{
+    text-decoration: none;
+    color: #e85959;
+    font-size: 40px;
+}
+.myLogin {
+    text-align: center;
+    align-items: center;
+    padding-left: 50px;
+}
+.myLogo img{
+    border-right: 3px solid #a1a1a1;
+}
+.myLogo {
+    margin: 0px;
+}
+.myContainer1 {
+    align-items: center;
+    margin: auto;
+    position: relative;
+    padding-top: 13%;
+}
+.myContainer2 {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 30%;
+}
+.myContainer3 a{
+    text-decoration: none;
+    color: #e85959;
+    text-align: center;
+}
+.myContainer3{
+    margin-top: 1%;
+    padding-left: 93%;
+}   
+@media(max-width: 600px){
+    .aa a{
+    }
+}
+
+	.error{
+		background-color: #e85959;
+		color: white;
+		text-align: center;
+		width: 100%;
+		float: clear;
+		padding-top: 0.3%;
+		padding-bottom: 0.3%;
+
+
+	}
+	.menu{
+		width: 100%;
+		height: 70px;
+		background-color: white;
+		box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.65);
+		float: left;
+	}
+
+	.menutitle{
+  		text-align: center ;
+  		margin: 23px 0;
+  		
+	}
+
+	.logo{
+  		margin-left: 5%;
+  		background-color: transparent;
+  		float: left;
+
+	}
+
+	.but{
+		background-color: transparent;
+  		text-align: center ;
+  		
+	}
+	
+	.aa a{
+	    color: #e85959;
+	    text-decoration: none;
+    	text-align: center;
+  		display: inline-block;
+  		padding-left: 2%;
+  		padding-right: 2%;
+  		float: right;
+  		font-size: 22px;
+	}
+
+	.ab a{  		
+	    color: #e85959;
+	    text-decoration: none;
+  		display: inline-block;
+  		padding-left: 2%;
+  		padding-right: -0.2%;
+  		margin-top: -12px;
+  		float: right;
+
+	}
+
+	.aab a{
+		border-right: 2px solid #a1a1a1;
+		height: 25px;
+ 		color: #e85959;
+	    text-decoration: none;
+    	text-align: center;
+  		display: inline-block;
+  		padding-left: 2%;
+  		padding-right: 2%;
+  		float: right;
+  		font-size: 22px;
+
+	}
+
+	.coverbut{
+		float: left;
+		width: 26%;
+		height: 26%;
+		margin-right:5%;
+		margin-left:5%;
+	}
+
+	.coverbut p{
+		font-size: 400%;
+		color: #a1a1a1;
+		text-align: center;
+
+	}
+
+
+	.coverbut img{
+ 		opacity: 0.9;
+    	filter: alpha(opacity=30); 	
+	}
+
+
+	.content{
+		margin-top: 8%;
+		margin-right:0;
+		margin-left:20%;
+	}
+	#content{
+		margin: 0 center;
+	}
+	.circle{ /* ชื่อคลาสต้องตรงกับ <img class="circle"... */
+	    /*height: auto; 
+	    width: auto; */ 
+	    border: 1px solid #fff; /* เส้นขอบขนาด 3px solid: เส้น #fff:โค้ดสีขาว */
+	    border-radius: 50%; /* ปรับเป็น 50% คือความโค้งของเส้นขอบ*/
+	    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* เงาของรูป */
+	}
+	.profile {
+		color: white;
+	    width: 20%;
+	    float: left;
+	    margin: 15px 10px 10px 15px;
+	    padding: 15px;
+	    /*border: 1px solid red;*/
+	    border-radius: 15px;
+
+	    background-color: rgb(232, 89, 89,0.8);
+	}
+
+	.myticket {
+		color: white;
+		background-color: rgb(232, 89, 89,0.8);
+	    width: 73%;
+	    float: right;
+	    margin: 15px 15px 15px 0px;
+	    padding: 0px 10px 0px 10px;
+	    border-radius: 15px;
+	    /*border: 1px solid red;*/
+	}
+
+	.ticket {
+		color: white;
+	    width: 73%;
+	    float: right;
+	    margin: 0px 15px 15px 0px;
+	    padding: 10px;
+	    border-radius: 10px;
+	    background-color: rgb(165, 155, 155,0.3)
+	    /*border: 1px solid red;*/
+	}
+	
+
+	.a1:link, .a1:visited {
+	    background-color: rgb(255, 255, 255,0.8);
+	    border-radius: 10px;
+	    color: black;
+	    padding: 10px 25px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	}
+
+
+	.a1:hover, .a1:active {
+	    background-color: white
+	}
+
+	.a2:link, .a2:visited {
+	    background-color: white;
+	    border-radius: 10px;
+	    color: black;
+	    padding: 8px 20px;
+	    /*margin-right: 10px;*/
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    float: right;
+	    margin-right: 20px;
+		margin-top: 0px;
+		margin-bottom: 2px;
+	}
+
+
+	.a2:hover, .a2:active {
+	    background-color: rgb(98, 255, 45,0.5);
+	}
+
+	.a3:link, .a3:visited {
+	    background-color: white;
+	    border-radius: 10px;
+	    color: black;
+	    padding: 8px 20px;
+	    margin-right: 10px;
+	    text-align: center;
+	    text-decoration: none;
+	    float: right;
+	    display: inline-block;
+	    margin-right: 10px;
+		margin-top: 0px;
+		margin-bottom: 2px;
+	}
+
+
+	.a3:hover, .a3:active {
+	    background-color: rgb(232, 89, 89,0.5);
+	}
+
+	.onsell{
+		background-color: rgb(98, 255, 45,0.6);
+		border-radius: 10px;
+		color: white;
+		text-align: center;
+		padding: 10px;
+		width: 100px;
+		float: right;
+		margin-right: 20px;
+		margin-top: 0px;
+		margin-bottom: 2px;
+	}
+
+	.soldout{
+		background-color: rgb(232, 89, 89,0.8);
+		border-radius: 10px;
+		color: white;
+		text-align: center;
+		padding: 10px;
+		width: 100px;
+		float: right;
+		margin-right: 20px;
+		margin-top: 0px;
+		margin-bottom: 2px;
+	}
+
+
+	.p{
+		margin-top: 50px;
+		/*background-color: red;*/
+	}
+
+	.image{
+		margin: 15px 15px 0px 15px;
+		align-items: left;
+	}
+
+		/* width */
+	::-webkit-scrollbar {
+	    width: 15px;
+	}
+
+	
+	/* Track */
+	::-webkit-scrollbar-track {
+	    background: #e85959; 
+
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	    background: #9b2828; 
+	    border-radius: 8px;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	    background: #721414; 
+	}
+
+	.myNotification {
+		position: absolute;
+    	bottom: 92.5%;
+    	right: 7.2%;
+    	font-size: 15px;
+    	background-color: red;
+    	border-radius: 50%;
+		border: solid red; 
+		border-right: 9px solid red;
+		border-left: 9px solid red;
+		color: white;
+		width: 0.4%;
+	}
+
+	.usersymbolContainer{
+		text-align: top;
+		background-color: red;
+		cursor: pointer;
+	}
+
+
+
+	@media(max-width: 600px){
+		.aa a{
+		  	}
+
+	}
+
+
+
+</style>
+
+<head>
+	<title>Sell</title>
+</head>
+
+<body>
+
+	
+
+	{% load staticfiles %}
+	{% if request.user.is_authenticated %}
+	<div class = "error">
+		Please verify seller's information and be careful of second-handed ticket selling online before purchasing 
+	</div>
+
+
+	<div class="menu">
+		<div class="logo">
+  			<a href='/home' target= "_blank"><img src="{% static "images/reticlogo.png" %}" width="160" height="70"></a>
+		</div>
+		<div class="menutitle">
+			<div class="aa"><a href="{% url 'logout'%}" target="_blank">Logout</a></div>			
+			<div class="usersymbolContainer">		
+					<div class="ab"><a href='/profile/{{user.id}}' target= "_blank">
+
+					{% if user.customer.profile_pic == "" %}
+						<img src="{% static "images/usersymbol.png" %}" width="50" height="50" style="border-radius:50%" id="idImg">	
+					{% else %}
+						<img src="{{user.customer.profile_pic.url}}" width="50" height="50" style="border-radius:50%" id="idImg">
+					{% endif %}
+					</a>	  
+					</div>
+
+					{% for order in order %}
+						{% if user.username  == order.ticket.customer.user.username %}
+							{% if order.status  == "unread" %}
+								<div class="myNotification" 
+							> ! </div>
+							{% endif %}
+							{% if order.status  == "read" %}
+								<div class="myNotification" 
+								style="display:none;"> ! </div>
+							{% endif %}
+						{% endif %}
+					{% endfor %}
+				</div>				
+
+			<div class="aab"><a href="/home" target="_blank">Contact</a></div>
+
+			<div class="aa"><a href="/sell" target="_blank">Seller</a></div>			
+			<div class="aa"><a href="/buy" target="_blank">Buyer</a></div>
+		</div>
+	</div>
+		
+  	<div class="profile">
+  	<center>
+	    <h2>Profile</h2>
+	    {% if user.customer.profile_pic %}
+	    <img class="circle" src="{{ user.customer.profile_pic.url }}" width="120" height="120">
+	    {% endif %}
+	    <p>User: {{ user }}</p>
+	    <p>First name: {{ user.first_name }}</p>
+	    <p>Last name: {{ user.last_name }}</p>
+	    <p>Email: {{ user.email }}</p>
+	    <p>Phone: {{ user.customer.num_phone }}</p>
+	    <p>Bank: {{ user.customer.bank_name }}</p>
+	    <p>Account No.: {{ user.customer.account_number }}</p>
+
+	   
+	    <a class="a1" href="/editprofile">EDIT</a>
+	    
+	    
+		</center>
+    </div>
+   
+
+   
+	<div class="myticket">
+		<h3>My ticket</h3>
+	</div>
+	    
+	{%for t in ticket%}    
+	<div class="ticket">
+    
+    {% if t.pic %}
+	    <img class="image" src="{{ t.pic.url }}" 
+	    align="left" width="130" height="130">
+	{% endif %}
+	<div class="p">
+		<p><b> Ticket No : {{t.no}}</b></p>
+	<p><b> Price : {{t.price}} </b></p>
+
+	</div>
+	
+
+	<!-- {% if t.status == "sold out" %}
+
+	<p class="soldout"> {{t.status}} </p>
+
+	{% else %}
+
+	<p class="onsell"> {{t.status}} </p>
+
+	{% endif %} -->
+     
+    {% if t.status == "PROCESS" %}
+
+	<a id="confirm" class="a2" href="/changestatus/{{t.id}}">CONFIRM</a>
+	<a id="cancel" class="a3" href="/editprofile">CANCEL</a>
+
+	{% endif %}
+
+	{% if t.status == "SOLD OUT" %}
+
+	<p class="soldout"> {{t.status}} </p>
+
+	{% endif %}
+
+	{% if t.status == "ON SELL" %}
+
+	<p class="onsell"> {{t.status}} </p>
+
+	{% endif %}
+	
+
+
+</div>
+{% endfor %}
+
+{% else %}
+       	<div class="myContainer1">  
+	        <div class="myContainer2">
+	            <div class="myLogo">
+	                <img src="{% static "images/reticlogo.png" %}" width="400" height="200">
+	            </div>
+	            <div class="myLogin">
+	                <a href="{% url 'social:begin' 'tu' %}">Login with TU</a>
+	            </div>
+	        </div>
+    	</div>
+    {% endif %}
+	
+<script>
+
+</script>
+
+</body>
+</html> 
